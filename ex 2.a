@@ -1,0 +1,12 @@
+from transformers import pipeline
+
+# Load sentiment analysis pipeline
+sentiment_analyzer = pipeline("sentiment-analysis")
+
+# Input text
+text = "The Generative AI workshop was extremely informative and useful."
+
+# Predict sentiment
+result = sentiment_analyzer(text)
+
+print(result)
